@@ -1,5 +1,8 @@
 def time_planner(dur, time_A, time_B):
-    """Return the time slot where a meeting can be scheduled between persons A and B for the required duration
+    """Problem: Return the time slot where a meeting can be scheduled between persons A and B for the required duration
+        Space Complexity: O(1)
+        Time Complexity: O(nlogn + mlogm) for non-sorted arrays, where n and m are lengths of timesA and timesB.
+
         # Case 1 - overlap exists which is less than equal to the duration
         # time_A = [[24th april, 2017, 10.00 am , 24th april, 2017, 12.00 pm], [24th april, 2017, 12.00 pm, 24th april, 2017, 12.30 pm], [24th april, 2017, 8.30 am, 24th april, 2017, 9.00 am]]
         # time_B = [[24th april, 2017, 9.00 am, 24th april, 2017, 10.00 am], [23rd april, 2017, 10.00 am, 23rd april, 2017, 10.30 am], [24th april, 2017, 11.00 am, 24th april, 2017, 1.00 pm], [24th april, 2017, 3.00 pm, 24th april, 2017, 4.00 pm]]
